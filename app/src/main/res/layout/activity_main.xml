@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+  <SurfaceView
+      android:id="@+id/surfaceView"
+      android:layout_width="match_parent"
+      android:layout_height="400dp" />
+<SeekBar
+    android:id="@+id/seekBar"
+    android:max="100"
+    android:visibility="gone"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content" />
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:gravity="center"
+        android:onClick="open"
+        android:text="打开"/>
+
+    <ImageView
+        android:visibility="gone"
+        android:id="@+id/iv"
+        android:layout_margin="20dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <VideoView
+        android:visibility="gone"
+        android:id="@+id/videoView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+</LinearLayout>
